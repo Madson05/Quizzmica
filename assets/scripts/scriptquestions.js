@@ -1,3 +1,5 @@
+let nivel = 6;
+
 function questions(){
     let listaDeQuestoes = [
         
@@ -95,6 +97,34 @@ function questions(){
 
 }
 
-function embaralha() {
+function separador() {
     let lista = questions();
+    let lista_level = []
+
+    for(let i = 0; i<lista.length; i++){
+        questao = lista[i]
+        if(questao.nivel == nivel){
+            lista_level.push(questao)
+        }
+    }
+    return lista_level;
 }
+
+function pegaQuest(){
+    let questoes = separador();
+    let numeroQ = Math.floor(Math.random() * questoes.length);
+    let questao = questoes[numeroQ];
+
+    questoes.splice(numeroQ);
+
+    return questoes;
+
+        
+    }
+
+
+console.log(pegaQuest());
+console.log(pegaQuest());
+console.log(pegaQuest());
+console.log(pegaQuest());
+console.log(pegaQuest());
