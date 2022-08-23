@@ -1,36 +1,48 @@
+
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(33, 33, 226);
+
 }
 
 #titulo{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 50px;
+    color: #84398B;
+    font-family: cursive;
+    font-size: 90px;
+    margin-bottom: -50px;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+}
+
+.imagem{
+    height: 500px;
+    width: 100%;
+    margin-left: -80px;
+    background: url(../images/semfundo.png);
+    background-repeat: no-repeat;
 }
 
 .opcoes{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
+    flex-direction: row;
+    margin-top: -330px;
+    margin-left: 40px;
 }
 
 button{
-    width: 200px;
-    height: 70px;
-    border-radius: 20px;
+    width: 300px;
+    height: 120px;
+    background-color: #84398B;
     border: transparent;
     margin-top: 10px;
-    margin-left: 5px;
-    font-size:  20px;
-    color: rgb(0, 0, 0);
+    margin-left: 80px;
+    font-family: cursive;
+    font-size:  40px;
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px #D9D9D9;
 }
