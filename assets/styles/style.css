@@ -6,9 +6,10 @@ body{
 }
 
 #titulo{
-    color: #84398B;
+    color: #0c1fc9ea;
     font-family: cursive;
     font-size: 90px;
+    text-shadow: 5px 5px rgba(69, 122, 236, 0.411);
     margin-bottom: -50px;
 }
 
@@ -16,28 +17,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.imagem{
-    height: 500px;
-    width: 100%;
-    margin-left: -80px;
-    background: url(../images/semfundo.png);
-    background-repeat: no-repeat;
+    background: url(../images/img_fundo.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
 }
 
 .opcoes{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: -330px;
-    margin-left: 40px;
+    margin-top: 90px;
 }
 
 button{
     width: 300px;
     height: 120px;
-    background-color: #84398B;
+    background-color: #04347cbe;
     border: transparent;
     margin-top: 10px;
     margin-left: 80px;
@@ -45,4 +41,37 @@ button{
     font-size:  40px;
     color: rgb(255, 255, 255);
     box-shadow: 10px 10px #D9D9D9;
+}
+
+@media screen and (max-width: 500px){
+    
+    #titulo{
+        font-size: 80px;
+    }
+
+    .bloco{
+        height: 20px;
+        width: 40%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        height: 90px;
+        width: 200px;
+        font-size: 25px;
+        margin-left: 10px;
+        box-shadow: 8px 8px #D9D9D9;
+    }
+
+    .opcoes{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
