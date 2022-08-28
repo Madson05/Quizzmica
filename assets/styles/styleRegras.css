@@ -1,0 +1,195 @@
+body{
+    background-color: #39808b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: cursive;
+}
+
+#titulo{
+    color: #f0f0f0;
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: -50px;    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quadros{
+    border-radius: 0px 0px 20px 20px ;
+    width: 60%;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    border: transparent;
+    background-color: white;
+}
+
+.titulo_quadrado{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.informacoes{
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+
+}
+
+#imagem_um{
+    background: url(../images/coroa.png);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    height: 4vh;
+    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tema{
+    width: auto;
+    height: 15px;
+    
+}
+#primeiro{
+    background-color: #ffff00;
+}
+
+#quadro_um{
+    height: 50px;
+    width: 50px;
+    background-color: #ffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.qualquer{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#quadro_dois{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(15, 24, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#imagem_dois{
+    background:url(../images/duvida.png);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#segundo{
+    background-color: rgb(15, 24, 189);   
+}
+
+#terceiro{
+    background-color: rgb(94, 212, 10);
+}
+
+#imagem_tres{
+    background:url(../images/diversao.png);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    height: 4vh;
+    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quadro_tres{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(94, 212, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#modo{
+    text-align: justify;
+}
+
+#quarto{
+    background-color: rgb(227, 19, 12);
+}
+
+#imagem_quatro{
+    background:url(../images/vencedor.png);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    height: 4vh;
+    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quadro_quatro{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(227, 19, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1050px) {
+    .container{
+        flex-direction: column;
+    }
+
+    #imagem_um, #imagem_dois, #imagem_tres, #imagem_quatro{
+        height: 3vh;
+        width: 4vw;
+    }
+  
+}
+
+@media screen and (max-width: 450px){
+    #imagem_um, #imagem_dois, #imagem_tres, #imagem_quatro{
+        height: 3vh;
+        width: 6vw;
+    }
+
+    #quadro1, #quadro2, #quadro3, #quadro4{
+        height: auto;
+    }
+}
