@@ -1,8 +1,14 @@
-let nivel = 6;
+let nivel = 5;
+let listaNivel = []
 
 function questions(){
     let listaDeQuestoes = [
         
+
+
+
+
+
         Item1 = {
             numero : 2,
             enunciado: "A fórmula estrutural da metanamina é:",
@@ -14,8 +20,10 @@ function questions(){
             `H3C—CH2—CH2
                       |
                      NH2 ` ], 
-            resposta: 1
+            resposta: 1,
+            nivel: 5
         },
+
 
         Item2 = {
             numero : 2,
@@ -98,33 +106,44 @@ function questions(){
 }
 
 function separador() {
+    let qtdeQuestions = 0;
     let lista = questions();
     let lista_level = []
 
-    for(let i = 0; i<lista.length; i++){
-        questao = lista[i]
+    while(qtdeQuestions < 5){
+
+        let numeroQ = Math.floor(Math.random() * lista.length);
+        questao = lista[numeroQ];
+
         if(questao.nivel == nivel){
             lista_level.push(questao)
+            qtdeQuestions++;
         }
+
+        
     }
     return lista_level;
 }
 
-function pegaQuest(){
-    let questoes = separador();
-    let numeroQ = Math.floor(Math.random() * questoes.length);
-    let questao = questoes[numeroQ];
-
-    questoes.splice(numeroQ);
-
-    return questoes;
-
+function pegaQuestion(lista){
+    listaNivel = lista
+    let questao;
+    
+    console.log("odi")
+    let numeroQ = Math.floor(Math.random() * listaNivel.length);
+    questao = listaNivel[numeroQ];
+    listaNivel.splice(questao);
+    console.log(lista)
         
-    }
 
 
-console.log(pegaQuest());
-console.log(pegaQuest());
-console.log(pegaQuest());
-console.log(pegaQuest());
-console.log(pegaQuest());
+    return questao;
+}
+
+if(listaNivel.length == 0){
+    listaNivel = separador();
+    console.log(pegaQuestion(listaNivel));
+}
+
+
+
