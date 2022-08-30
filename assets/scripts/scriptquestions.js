@@ -169,13 +169,20 @@ function pegaQuestion(){
     return questao;
 }
 
+function separaDados(){
+    questaoEsc = pegaQuestion();
+    document.getElementById("enunciado").innerHTML = `${questaoEsc.enunciado}`
+    for(let i = 1; i<questaoEsc.alternativas.length+1; i++){
+        indiceAlternativa = Math.floor(Math.random() * questaoEsc.alternativas.length);
+        console.log(questaoEsc.alternativas[indiceAlternativa])
+        let alt = document.getElementById(`a${i}`);
+        alt.innerHTML = `${questaoEsc.alternativas[indiceAlternativa]}`
+    }
 
 
-console.log(pegaQuestion())
-console.log(pegaQuestion())
+}
 
-console.log(listaNivel)
-console.log(listaNivel.length)
+separaDados();
 
 
 
