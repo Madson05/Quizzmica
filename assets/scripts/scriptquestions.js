@@ -65,7 +65,7 @@ function questions(){
         {
            
             enunciado: "A camada de ozônio (cinturão de Van Allen), que protege a biosfera do efeito nocivo de certas radiações, sofre ataque destrutivo dos CFC (clorofluorcarbono) usados em aerossóis e refrigeração, por exemplo. O mais usado, freon-12, de fórmula molecular CF2Cℓ2, pertence à função:",
-            alternativas: ["a)hidrocarboneto", "cloreto de ácido", "haleto orgânico.", "hidrocarboneto insaturado."],
+            alternativas: ["hidrocarboneto", "cloreto de ácido", "haleto orgânico.", "hidrocarboneto insaturado."],
             resposta: 4,
             nivel: 5,
         },
@@ -172,11 +172,23 @@ function pegaQuestion(){
 function separaDados(){
     questaoEsc = pegaQuestion();
     document.getElementById("enunciado").innerHTML = `${questaoEsc.enunciado}`
-    for(let i = 1; i<questaoEsc.alternativas.length+1; i++){
+    let indices = []
+    let qtde_numeros = 0;
+
+    while(qtde_numeros < 4){
         indiceAlternativa = Math.floor(Math.random() * questaoEsc.alternativas.length);
-        console.log(questaoEsc.alternativas[indiceAlternativa])
+        if(!indices.includes(indiceAlternativa)){
+            indices.push(indiceAlternativa)
+            qtde_numeros+=1
+        }
+
+    }
+    console.log(indices)
+
+    for(let i = 1; i<indices.length+1; i++){
+        
         let alt = document.getElementById(`a${i}`);
-        alt.innerHTML = `${questaoEsc.alternativas[indiceAlternativa]}`
+        alt.innerHTML = `${questaoEsc.alternativas[indices[i-1]]}`
     }
 
 

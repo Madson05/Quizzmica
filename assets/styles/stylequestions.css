@@ -14,12 +14,7 @@ body{
 }
 
 .bloco{
-<<<<<<< HEAD
     height: 95%;
-=======
-    border-radius: 10%;
-    height: 90%;
->>>>>>> 7e568e73688fad2fb468a78ca1ecdbb7231195b6
     width: 40%;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -46,7 +41,7 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.enunciado{
+#enunciado{
     height: 190px;
     width: 300px;
     border-radius: 15px;
@@ -66,9 +61,11 @@ body{
 
 }
 
-#a, #b, #c, #d{
-    height: 80px;
-    width: 520px;
+.alternativa{
+    text-align: center;
+    padding: 5%;
+    width: 80%;
+    
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgb(240, 240, 240), 3px 3px 10px rgba(167, 166, 166, 0.548);
     background-color: rgb(255, 255, 255);
