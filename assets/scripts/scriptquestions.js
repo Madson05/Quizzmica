@@ -1,6 +1,8 @@
 let nivel = 5;
 var listaNivel = [];
-
+let questaoEsc
+let classAlternativas = document.getElementsByClassName("alternativa")
+let pontos = 0;
 
 
 
@@ -169,30 +171,115 @@ function pegaQuestion(){
     return questao;
 }
 
-function separaDados(){
-    questaoEsc = pegaQuestion();
-    document.getElementById("enunciado").innerHTML = `${questaoEsc.enunciado}`
-    let indices = []
-    let qtde_numeros = 0;
 
-    while(qtde_numeros < 4){
-        indiceAlternativa = Math.floor(Math.random() * questaoEsc.alternativas.length);
-        if(!indices.includes(indiceAlternativa)){
-            indices.push(indiceAlternativa)
-            qtde_numeros+=1
+function respondeu(botaoApertado){
+
+
+    
+
+    for(let i =0; i<classAlternativas.length; i++){
+        if(i+1 != botaoApertado){
+            if(classAlternativas[i].disabled==false){
+                classAlternativas[i].disabled = true
+            }
+            else{
+                classAlternativas[i].disabled = false
+            }
+            
+
         }
-
     }
-    console.log(indices)
 
-    for(let i = 1; i<indices.length+1; i++){
-        
-        let alt = document.getElementById(`a${i}`);
-        alt.innerHTML = `${questaoEsc.alternativas[indices[i-1]]}`
-    }
+    setTimeout(() => { separaDados(1) }, 2000);
+
+    
 
 
 }
+
+function separaDados(){
+    
+    for(let i =0; i<classAlternativas.length; i++){
+        classAlternativas[i].style.backgroundColor = "white"
+        classAlternativas[i].disabled=false
+    }
+    
+    questaoEsc = pegaQuestion();
+    document.getElementById("enunciado").innerHTML = `${questaoEsc.enunciado}`
+    let indices = []
+
+
+    for(let i = 0; i<questaoEsc.alternativas.length; i++){
+        
+        let alt = document.getElementById(`a${i+1}`);
+        alt.innerHTML = `${questaoEsc.alternativas[i]}`
+    }
+
+    return indices
+
+
+}
+
+let indices = separaDados()
+questaoEsc.alternativas[questaoEsc.resposta]
+
+function button1(){
+    let divpintar = document.getElementById("a1")
+    if(questaoEsc.alternativas[0] == questaoEsc.alternativas[questaoEsc.resposta-1]){
+        divpintar.style.backgroundColor = "green";
+        pontos += 20
+    }
+    else{
+        divpintar.style.backgroundColor = "red";
+    }
+
+    respondeu(1)
+
+    
+
+    
+
+}
+
+function button2(){
+    let divpintar = document.getElementById("a2")
+    if(questaoEsc.alternativas[1] == questaoEsc.alternativas[questaoEsc.resposta-1]){
+        divpintar.style.backgroundColor = "green";
+        pontos += 20
+    }
+    else{
+        divpintar.style.backgroundColor = "red";
+    }
+    respondeu(2)
+}
+
+
+function button3(){
+    let divpintar = document.getElementById("a3")
+    if(questaoEsc.alternativas[2] == questaoEsc.alternativas[questaoEsc.resposta-1]){
+        divpintar.style.backgroundColor = "green";
+        pontos += 20
+    }
+    else{
+        divpintar.style.backgroundColor = "red";
+    }
+    respondeu(3)
+}
+function button4(){
+    let divpintar = document.getElementById("a4")
+    if(questaoEsc.alternativas[3] == questaoEsc.alternativas[questaoEsc.resposta-1]){
+        divpintar.style.backgroundColor = "green";
+        pontos += 20
+        
+    }
+    else{
+        divpintar.style.backgroundColor = "red";
+    }
+    respondeu(4)
+}
+
+
+
 
 separaDados();
 
