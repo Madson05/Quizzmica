@@ -37,7 +37,7 @@ body{
     border-radius: 15px;
     margin-top: 10px;
     margin-left: 13.195px;
-    box-shadow: 3px 3px 10px rgb(250, 249, 249), 3px 3px 10px rgba(167, 166, 166, 0.548);
+
     background-color: rgb(255, 255, 255);
 }
 
@@ -60,16 +60,44 @@ body{
     gap: 8px;
 
 }
+.answers_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    margin-top: 10px;
+    gap: 8px;
+
+}
 
 .alternativa{
     text-align: center;
     padding: 5%;
     width: 80%;
-    
+    border: transparent;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgb(240, 240, 240), 3px 3px 10px rgba(167, 166, 166, 0.548);
     background-color: rgb(255, 255, 255);
 }
+.alternativa_image{
+    text-align: center;
+    padding: 5%;
+    height: 170px;
+    width: 200px;
+    border: transparent;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgb(240, 240, 240), 3px 3px 10px rgba(167, 166, 166, 0.548);
+    background-color: rgb(255, 255, 255);
+}
+
+.primeira_linha, .segunda_linha{
+    display: flex;
+}
+.primeira_linha > #a2, .segunda_linha > #a4{
+    margin-left: 30px;
+}
+
 @media screen and (max-width: 500px) {
     .bloco{
         height: 80%;

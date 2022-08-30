@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stylequestions.css">
+    <title>Questionário - Quizzmica</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bloco">
+    
+            <section id = "localQuestions">
+                <section class="imagem"></section>
+                <section id="enunciado"></section>
+            </section>
+
+            <div class = "answers_image">
+                <div class="primeira_linha">
+                    <button onclick = "verificar()" class = "alternativa_image" id="a1"></button>
+                    <button onclick = "verificar()" class = "alternativa_image" id="a2"></button>
+                </div>
+                
+                <div class="segunda_linha">
+                    <button onclick = "verificar()" class = "alternativa_image" id="a3"></button>
+                    <button onclick = "verificar()" class = "alternativa_image" id="a4"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/scriptquestions.js"></script>
+</body>
+</html>
