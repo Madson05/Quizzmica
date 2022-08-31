@@ -11,7 +11,7 @@ function questions(){
 
 
 
-
+    
     let listaDeQuestoes = [
         
         {
@@ -193,6 +193,7 @@ function questions(){
 }
 
 function separador() {
+    
     let qtdeQuestions = 0;
     let lista = questions();
     let lista_level = []
@@ -264,10 +265,17 @@ function respondeu(botaoApertado){
         
     }
 
+    
+
     else if(jogadas == 3){
         listaNivel = []
         pontos = 0
+        alert("Você errou mais de uma, vamos repetir o seu nivel!")
 
+    }
+
+    if(nivel ==4){
+        alert("Parabéns, Você ganhouuuuu")
     }
     setTimeout(() => { separaDados() }, 2000);
 
