@@ -151,7 +151,7 @@ function questions(){
         
         {
             enunciado: "Nome da fórmula estrutural abaixo:",
-            alternativas: ["Propanoato de fetila", "Etonoato de etila", "Aceto de etila", "Propenoato"],
+            alternativas: ["Propanoato de fetila", "Etanoato de etila", "Aceto de etila", "Propenoato"],
             resposta: 2,
             nivel: 2,
             imagem: "../images/NomeDaFormulaEstruturalAbaixoNiv2.png"
