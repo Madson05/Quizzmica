@@ -15,7 +15,7 @@ function questions(){
     let listaDeQuestoes = [
         
         {
-            enunciado: "Essa cadeia é: ",
+            enunciado: "Essa cadeia é:",
             alternativas: ["Normal", "Ramificada", "Normal e ramificada", "Nenhuma das alternativas acima"],
             resposta: 1,
             nivel: 1 ,
@@ -81,11 +81,11 @@ function questions(){
 
 
         {
-            enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
+            enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
             alternativas: ["Álcool.", "Amina.", "Amida.", "Éster."],
             resposta: 3,
             nivel: 3,
-            imagem: "../images/ASeguirEstaRepresentadaAEstruturaDaDihidrocapsaicina.PNG"
+            imagem: null
 
         },
 
@@ -142,7 +142,7 @@ function questions(){
         
         {
             enunciado: "Qual a função existente nessa estrutura: CH3-O-CH2-CH3",
-            alternativas: ["Eter", "Éster", "Álcool", "Haleto"],
+            alternativas: ["Éter", "Éster", "Álcool", "Haleto"],
             resposta: 1,
             nivel: 2,
             imagem: "../images/QualaFuncaoExistente.png"
@@ -151,7 +151,7 @@ function questions(){
         
         {
             enunciado: "Nome da fórmula estrutural abaixo:",
-            alternativas: ["Propanoato de fetila", "Etanoato de etila", "Aceto de etila", "Propenoato"],
+            alternativas: ["Propanoato de fetila", "Etonoato de etila", "Aceto de etila", "Propenoato"],
             resposta: 2,
             nivel: 2,
             imagem: "../images/NomeDaFormulaEstruturalAbaixoNiv2.png"
@@ -162,7 +162,7 @@ function questions(){
            alternativas: ["Aldeido", "Álcool", "Ceteno", "Ácido carboxílico"], 
            resposta: 1,
            nivel: 2,
-           imagem: "../images/QualAFuncaoAldeidodoCompostoAbaixo.png"
+           imagem: "QualA FuncaoAldeidodoCompostoAbaixo.png"
         },
         
         {
