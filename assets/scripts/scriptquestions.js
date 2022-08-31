@@ -73,25 +73,15 @@ function questions(){
 
         
         {
-            
-            enunciado : `Nome da fórmula estrutural abaixo:
-            
-            
-     NH2
-      |
-     H2C—CH2—CH—CH3
-              |
-             CH2
-`,
+            enunciado : `Nome da fórmula estrutural abaixo:`,
             alternativas : ["Propano-1,3-diamina", "Propano-1,2,3-triamina", "3-metilpropan-1-amina", "Etilmetilamina" ], 
             resposta: 3,
             nivel: 3,
-            imagem: null
+            imagem: "../images/NomeDaFormulaEstruturalAbaixo.png"
         },
 
 
         {
-            
             enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
             alternativas: ["Álcool.", "Amina.", "Amida.", "Éster."],
             resposta: 3,
@@ -115,7 +105,7 @@ function questions(){
            
             enunciado: "A camada de ozônio (cinturão de Van Allen), que protege a biosfera do efeito nocivo de certas radiações, sofre ataque destrutivo dos CFC (clorofluorcarbono) usados em aerossóis e refrigeração, por exemplo. O mais usado, freon-12, de fórmula molecular CF2Cℓ2, pertence à função:",
             alternativas: ["hidrocarboneto", "cloreto de ácido", "haleto orgânico.", "hidrocarboneto insaturado."],
-            resposta: 4,
+            resposta: 3,
             nivel: 3,
             imagem: null
         },
@@ -251,7 +241,7 @@ function respondeu(botaoApertado){
         
     }
     jogadas++;
-    if(pontos >= 40 && jogadas == 3){
+    if(pontos >= 40 && jogadas >= 3){
         nivel++;
         listaNivel = [];
         pontos = 0
