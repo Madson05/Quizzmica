@@ -162,7 +162,7 @@ function questions(){
            alternativas: ["Aldeido", "Álcool", "Ceteno", "Ácido carboxílico"], 
            resposta: 1,
            nivel: 2,
-           imagem: "QualAFuncaoAldeidodoCompostoAbaixo.png"
+           imagem: "../images/QualAFuncaoAldeidodoCompostoAbaixo.png"
         },
         
         {
