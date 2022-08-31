@@ -128,8 +128,12 @@ body{
 
 @media screen and (max-width: 500px) {
     .bloco{
-        height: 85%;
+        height: 100%;
         width: 90%;
+    }
+
+    .container{
+        background-size: contain, cover;
     }
 
     .imagem{
