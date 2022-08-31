@@ -9,7 +9,7 @@ let jogadas = 0;
 
 function questions(){
 
-    
+
 
 
     let listaDeQuestoes = [

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
 body{
     background-color: #39808b;
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: cursive;
+    font-family: 'Delius', cursive;
 }
 
 #titulo{
