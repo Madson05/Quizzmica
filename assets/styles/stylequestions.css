@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -12,42 +14,53 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.bloco{
-    height: 95%;
-    width: 40%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: 0 0 20px #011c31be;
+.pontuacao_nivel{
+    display: flex;
+    justify-content: center;
+    font-family: 'Delius', cursive;
 }
-
+.nivel{
+    height: 40px;
+    width: 100px;
+    background-color: aqua;
+}
+.pontuacao{
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: aqua;
+}
 #localQuestions{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     border-radius: 15px;
-    height: 190px;
+    height: 260px;
     width: 100%;
     gap: 10px;
-    background-color: rgb(255, 255, 255);
 }
 
 .imagem{
-    height: 190px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
+    border: 0.1px solid rgb(24, 155, 231);
     border-radius: 15px;
     margin-top: 10px;
     margin-left: 13.195px;
-
     background-color: rgb(255, 255, 255);
 }
 
 #enunciado{
-    height: 190px;
-    width: 300px;
+    height: auto;
+    width: 390px;
+    font-family: 'Delius', cursive;
+    text-align:justify;
+    font-size: 80%;
+    padding: 10px;
     border-radius: 15px;
     margin-top: 10px;
-    box-shadow: 3px 3px 10px rgb(255, 255, 255), 0px 3px 10px rgba(167, 166, 166, 0.548);
-    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(83, 198, 233);
 }
 
 .answers{
@@ -56,9 +69,9 @@ body{
     align-items: center;
     justify-content: center;
     height: 380px;
-    margin-top: 10px;
+    margin-top: 20px;
     gap: 8px;
-
+    
 }
 .answers_image{
     display: flex;
@@ -75,11 +88,14 @@ body{
     text-align: center;
     padding: 5%;
     width: 80%;
-    border: transparent;
+    border: 0.1px solid rgb(24, 155, 231);
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgb(240, 240, 240), 3px 3px 10px rgba(167, 166, 166, 0.548);
     background-color: rgb(255, 255, 255);
+    font-family: 'Delius', cursive;
+    font-weight: 700;
 }
+
 .alternativa_image{
     text-align: center;
     padding: 5%;
@@ -100,7 +116,20 @@ body{
 
 @media screen and (max-width: 500px) {
     .bloco{
-        height: 80%;
+        height: 85%;
         width: 90%;
+    }
+
+    .answers{
+        margin-top: 10px;
+    }
+
+    .imagem{
+        height: 140px;
+    }
+    #enunciado{
+        font-size: 14px;
+        height: auto;
+        width: 300px;
     }
 }
