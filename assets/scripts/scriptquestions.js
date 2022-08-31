@@ -21,7 +21,6 @@ function questions(){
             nivel: 1 ,
             imagem: "../images/EstaCadeia.png",
         
-        
         },
         
         {
@@ -142,6 +141,40 @@ function questions(){
         },
         
         {
+            enunciado: "Qual a função existente nessa estrutura: CH3-O-CH2-CH3",
+            alternativas: ["Eter", "Éster", "Álcool", "Haleto"],
+            resposta: 1,
+            nivel: 2,
+            imagem: "../images/QualaFuncaoExistente.png"
+        
+        },
+        
+        {
+            enunciado: "Nome da fórmula estrutural abaixo:",
+            alternativas: ["Propanoato de fetila", "Etonoato de etila", "Aceto de etila", "Propenoato"],
+            resposta: 2,
+            nivel: 2,
+            imagem: "../images/NomeDaFormulaEstruturalAbaixoNiv2.png"
+        },
+        
+        {
+           enunciado: "Qual a função do composto abaixo: ",
+           alternativas: ["Aldeido", "Álcool", "Ceteno", "Ácido carboxílico"], 
+           resposta: 1,
+           nivel: 2,
+           imagem: "QualA FuncaoAldeidodoCompostoAbaixo.png"
+        },
+        
+        {
+            enunciado: "Como é classicada uma molécula de álcool que apresenta apenas uma hidroxila?",
+            alternativas: ["Monoálcool", "Álcool", "Glicol", "Polióis" ],
+            resposta: 1,
+            nivel: 2,
+            imagem: null,
+        
+        },
+
+        {
             enunciado: "Identifique nessa estrutura os grupos funcionais:",
             alternativas: ["Álcool, cetona e fenol.", "Fenol e amina.", "Cetona, amida e fenol", "Cetona, amina e fenol"],
             resposta: 2,
@@ -151,26 +184,9 @@ function questions(){
         },
         
         
-        {
-            
-            enunciado: "(Fuvest – SP) Hidrocarbonetos halogenados, usados em aerossóis, são também responsáveis pela destruição da camada de ozônio da estratosfera. São exemplos de hidrocarbonetos halogenados:",
-            alternativas: ["CH2Cℓ2 e CH3CH3", "CH3COCℓ e CH3OCH2Cℓ", "CFCℓ3 e CHCℓ3", "CH3NH2 e CFCℓ3","CH3CHFCℓ e CH3COCℓ"],
-            resposta: 3,
-            nivel: 3,
-            imagem: null
-        },
 
         
-        
-        
-        {
-            
-            enunciado: "Em compostos orgânicos ou inorgânicos o átomo de oxigênio pode ser substituído por um átomo de enxofre, ambos pertencentes à mesma família da Tabela Periódica realizando, assim, a mesma quantidade de ligações. O etanol, por exemplo, pode formar o etanotiol, um tio-álcool. Como se pode obter um tio-éter a partir do éter etílico?",
-            alternativas: ["CH3CH2SH.", "CH3OCH3.", "CH3SCH3.", "CH3CH2OCH2CH3.", "CH3CH2SCH2CH3."],
-            resposta: 1,
-            nivel: 3,
-            imagem: null
-        }  
+    
     ];
     return listaDeQuestoes;
 

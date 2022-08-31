@@ -9,7 +9,7 @@ body{
     background: url(../images/img_fundo.jpg);
     height: 150%;
     width: 100vw;
-    background-size: cover;
+    background-size: contain, cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,13 +22,21 @@ body{
 #nivel{
     height: 40px;
     width: 100px;
-    background-color: aqua;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0.1px solid rgb(24, 155, 231);
+    background-color: rgb(14, 174, 196);
 }
 #pontuacao{
     height: 40px;
     width: 100px;
+    text-align: center;
+    font-size: 14px;
     margin-left: 10px;
-    background-color: aqua;
+    border-radius: 10px;
+    border: 0.1px solid rgb(24, 155, 231);
+    background-color: rgb(14, 174, 196);
 }
 #localQuestions{
     display: flex;
@@ -45,13 +53,14 @@ body{
     width: 200px;
     border: 0.1px solid rgb(24, 155, 231);
     border-radius: 15px;
-    margin-top: 10px;
     margin-left: 13.195px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 
 #imagem img{
+    background-position: center;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -119,8 +128,12 @@ body{
 
 @media screen and (max-width: 500px) {
     .bloco{
-        height: 85%;
+        height: 100%;
         width: 90%;
+    }
+
+    .container{
+        background-size: contain, cover;
     }
 
     .imagem{
