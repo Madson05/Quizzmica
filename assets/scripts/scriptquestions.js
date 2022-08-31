@@ -73,7 +73,7 @@ function questions(){
         
         {
             enunciado : `Nome da fórmula estrutural abaixo:`,
-            alternativas : ["Propano-1,3-diamina", "Propano-1,2,3-triamina", "3-metilpropan-1-amina", "Etilmetilamina" ], 
+            alternativas : ["Propano-1,3-diamina", "Butan-1,2,3-triamina", "3-metilbutan-1-amina", "Etilmetilamina" ], 
             resposta: 3,
             nivel: 3,
             imagem: "../images/NomeDaFormulaEstruturalAbaixo.png"
@@ -81,18 +81,18 @@ function questions(){
 
 
         {
-            enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
+            enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
             alternativas: ["Álcool.", "Amina.", "Amida.", "Éster."],
             resposta: 3,
             nivel: 3,
-            imagem: null
+            imagem: "../images/ASeguirEstaRepresentadaAEstruturaDaDihidrocapsaicina.PNG"
 
         },
 
 
         {
             
-            enunciado: "(PUC-MG) O princípio ativo dos analgésicos comercializados com nomes de Tylenol, Cibalena, Resprin é o paracetamol, cuja fórmula está representada a seguir. O princípio ativo dos analgésicos comercializados com nomes de Tylenol, Cibalena, Resprin é o paracetamol, cuja fórmula está representada a seguir",
+            enunciado: "(PUC-MG) O princípio ativo dos analgésicos comercializados com nomes de Tylenol, Cibalena, Resprin é o paracetamol, cuja fórmula está representada a seguir",
             alternativas: ["Fenol, cetona e amina.", "Álcool, cetona e amina.", "Álcool e amida.", "Fenol e amida."],
             resposta: 4,
             nivel: 3,
@@ -162,7 +162,7 @@ function questions(){
            alternativas: ["Aldeido", "Álcool", "Ceteno", "Ácido carboxílico"], 
            resposta: 1,
            nivel: 2,
-           imagem: "QualA FuncaoAldeidodoCompostoAbaixo.png"
+           imagem: "../images/QualAFuncaoAldeidodoCompostoAbaixo.png"
         },
         
         {
