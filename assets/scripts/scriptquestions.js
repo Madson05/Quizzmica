@@ -125,7 +125,7 @@ function questions(){
         
         {
             
-            enunciado: "(Unitau) O composto apresenta radicais que caracterizam Apresenta radicais que caracterizam:",
+            enunciado: "(Unitau) O composto apresenta radicais que caracterizam:",
             alternativas: ["Álcool e aminoácido.", "Fenol e ácido.", "Álcool e amina.", "Álcool e amida."],
             resposta: 3,
             nivel: 3,
