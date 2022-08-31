@@ -1,3 +1,4 @@
+
 let nivel = 1;
 let listaNivel = [];
 let questaoEsc
@@ -261,7 +262,6 @@ function respondeu(botaoApertado){
         nivel++;
         listaNivel = [];
         pontos = 0
-        
     }
 
     else if(jogadas == 3){
