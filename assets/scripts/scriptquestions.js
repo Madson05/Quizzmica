@@ -1,3 +1,4 @@
+
 let nivel = 1;
 let listaNivel = [];
 let questaoEsc
@@ -15,7 +16,7 @@ function questions(){
     let listaDeQuestoes = [
         
         {
-            enunciado: "Essa cadeia é: ",
+            enunciado: "Essa cadeia é:",
             alternativas: ["Normal", "Ramificada", "Normal e ramificada", "Nenhuma das alternativas acima"],
             resposta: 1,
             nivel: 1 ,
@@ -73,7 +74,7 @@ function questions(){
         
         {
             enunciado : `Nome da fórmula estrutural abaixo:`,
-            alternativas : ["Propano-1,3-diamina", "Propano-1,2,3-triamina", "3-metilpropan-1-amina", "Etilmetilamina" ], 
+            alternativas : ["Propano-1,3-diamina", "Butan-1,2,3-triamina", "3-metilbutan-1-amina", "Etilmetilamina" ], 
             resposta: 3,
             nivel: 3,
             imagem: "../images/NomeDaFormulaEstruturalAbaixo.png"
@@ -92,7 +93,7 @@ function questions(){
 
         {
             
-            enunciado: "(PUC-MG) O princípio ativo dos analgésicos comercializados com nomes de Tylenol, Cibalena, Resprin é o paracetamol, cuja fórmula está representada a seguir. O princípio ativo dos analgésicos comercializados com nomes de Tylenol, Cibalena, Resprin é o paracetamol, cuja fórmula está representada a seguir",
+            enunciado: "(PUC-MG) O princípio ativo dos analgésicos comercializados com nomes de Tylenol, Cibalena, Resprin é o paracetamol, cuja fórmula está representada a seguir",
             alternativas: ["Fenol, cetona e amina.", "Álcool, cetona e amina.", "Álcool e amida.", "Fenol e amida."],
             resposta: 4,
             nivel: 3,
@@ -124,7 +125,7 @@ function questions(){
         
         {
             
-            enunciado: "(Unitau) O composto apresenta radicais que caracterizam Apresenta radicais que caracterizam:",
+            enunciado: "(Unitau) O composto apresenta radicais que caracterizam:",
             alternativas: ["Álcool e aminoácido.", "Fenol e ácido.", "Álcool e amina.", "Álcool e amida."],
             resposta: 3,
             nivel: 3,
@@ -142,7 +143,7 @@ function questions(){
         
         {
             enunciado: "Qual a função existente nessa estrutura: CH3-O-CH2-CH3",
-            alternativas: ["Eter", "Éster", "Álcool", "Haleto"],
+            alternativas: ["Éter", "Éster", "Álcool", "Haleto"],
             resposta: 1,
             nivel: 2,
             imagem: "../images/QualaFuncaoExistente.png"
@@ -262,7 +263,6 @@ function respondeu(botaoApertado){
         nivel++;
         listaNivel = [];
         pontos = 0
-        
     }
 
     
