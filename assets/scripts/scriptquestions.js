@@ -15,7 +15,7 @@ function questions(){
     let listaDeQuestoes = [
         
         {
-            enunciado: "Essa cadeia é:",
+            enunciado: "Essa cadeia é: ",
             alternativas: ["Normal", "Ramificada", "Normal e ramificada", "Nenhuma das alternativas acima"],
             resposta: 1,
             nivel: 1 ,
@@ -81,11 +81,11 @@ function questions(){
 
 
         {
-            enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
+            enunciado: "(PUC-RJ) A seguir está representada a estrutura da dihidrocapsaicina, uma substância comumente encontrada em pimentas e pimentões. Na dihidrocapsaicina, está presente, entre outras, a função orgânica:",
             alternativas: ["Álcool.", "Amina.", "Amida.", "Éster."],
             resposta: 3,
             nivel: 3,
-            imagem: null
+            imagem: "../images/ASeguirEstaRepresentadaAEstruturaDaDihidrocapsaicina.PNG"
 
         },
 
