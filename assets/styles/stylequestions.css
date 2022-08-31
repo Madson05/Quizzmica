@@ -19,12 +19,12 @@ body{
     justify-content: center;
     font-family: 'Delius', cursive;
 }
-.nivel{
+#nivel{
     height: 40px;
     width: 100px;
     background-color: aqua;
 }
-.pontuacao{
+#pontuacao{
     height: 40px;
     width: 100px;
     margin-left: 10px;
@@ -40,14 +40,19 @@ body{
     gap: 10px;
 }
 
-.imagem{
-    height: 140px;
-    width: 140px;
+#imagem{
+    height: 200px;
+    width: 200px;
     border: 0.1px solid rgb(24, 155, 231);
     border-radius: 15px;
     margin-top: 10px;
     margin-left: 13.195px;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#imagem img{
+    width: 100%;
 }
 
 #enunciado{
