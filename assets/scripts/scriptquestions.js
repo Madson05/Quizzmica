@@ -177,7 +177,7 @@ function questions(){
 
         {
             enunciado: "Identifique nessa estrutura os grupos funcionais:",
-            alternativas: ["Álcool, cetona e fenol.", "Fenol e amina.", "Cetona, amida e fenol", "Cetona, amina e fenol"],
+            alternativas: ["Álcool, cetona e fenol.", "Fenol e amida.", "Cetona, amida e fenol", "Cetona, amina e fenol"],
             resposta: 2,
             nivel: 3,
             imagem: "../images/IdentifiqueNessaEstruturaOsGruposFuncionais.jpeg"
