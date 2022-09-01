@@ -4,7 +4,7 @@ let listaNivel = [];
 let questaoEsc
 let classAlternativas = document.getElementsByClassName("alternativa")
 let pontos = 0;
-let jogadas = 0;
+let acertos = 0;
 
 
 
@@ -258,25 +258,21 @@ function respondeu(botaoApertado){
         }
         
     }
-    jogadas++;
-    if(pontos >= 40 && jogadas >= 3){
+    
+    if(acertos >= 4){
         nivel++;
         listaNivel = [];
+        acertos = 0
         pontos = 0
     }
 
     
 
-    else if(jogadas == 3){
-        listaNivel = []
-        pontos = 0
-        alert("Você errou mais de uma, vamos repetir o seu nivel!")
-
-    }
-
     if(nivel ==4){
         alert("Parabéns, Você ganhouuuuu")
     }
+
+    console.log("oi")
     setTimeout(() => { separaDados() }, 2000);
 
 
@@ -329,6 +325,7 @@ function button1(){
     let divpintar = document.getElementById("a1")
     if(questaoEsc.alternativas[0] == questaoEsc.alternativas[questaoEsc.resposta-1]){
         divpintar.style.backgroundColor = "green";
+        acertos +=1;
         pontos += 20
     }
     else{
@@ -347,6 +344,7 @@ function button2(){
     let divpintar = document.getElementById("a2")
     if(questaoEsc.alternativas[1] == questaoEsc.alternativas[questaoEsc.resposta-1]){
         divpintar.style.backgroundColor = "green";
+        acertos +=1;
         pontos += 20
     }
     else{
@@ -360,6 +358,7 @@ function button3(){
     let divpintar = document.getElementById("a3")
     if(questaoEsc.alternativas[2] == questaoEsc.alternativas[questaoEsc.resposta-1]){
         divpintar.style.backgroundColor = "green";
+        acertos +=1;
         pontos += 20
     }
     else{
@@ -371,6 +370,7 @@ function button4(){
     let divpintar = document.getElementById("a4")
     if(questaoEsc.alternativas[3] == questaoEsc.alternativas[questaoEsc.resposta-1]){
         divpintar.style.backgroundColor = "green";
+        acertos +=1;
         pontos += 20
         
     }
